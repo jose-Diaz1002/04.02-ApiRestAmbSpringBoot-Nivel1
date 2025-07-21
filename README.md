@@ -38,12 +38,13 @@ To start, go to 👉 [https://start.spring.io](https://start.spring.io) and gene
 
 We will work with an entity called `Fruit`, which contains the following fields:
 
-```java
+- int id;
+- String name;
+- int quantityKilos;
+
 
 ##Package Structure
-int id;
-String nom;
-int quantitatQuilos;
+
 
 cat.itacademy.s04.t02.n01.controllers
 cat.itacademy.s04.t02.n01.model
