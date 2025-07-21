@@ -14,16 +14,16 @@ To start, go to 👉 [https://start.spring.io](https://start.spring.io) and gene
 
 ### 💡 Project Metadata
 
-- **Project**: Maven
-- **Language**: Java
-- **Spring Boot**: Latest stable version
-- **Group**: `cat.itacademy.s04.t02.n01`
-- **Artifact**: `S04T02N01`
-- **Name**: `S04T02N01`
-- **Description**: `S04T02N01LastnameFirstname`
-- **Package name**: `cat.itacademy.s04.t02.n01`
-- **Packaging**: Jar
-- **Java version**: 11 or higher
+- **Project**: Maven  
+- **Language**: Java  
+- **Spring Boot**: Latest stable version  
+- **Group**: `cat.itacademy.s04.t02.n01`  
+- **Artifact**: `S04T02N01`  
+- **Name**: `S04T02N01`  
+- **Description**: `S04T02N01LastnameFirstname`  
+- **Package name**: `cat.itacademy.s04.t02.n01`  
+- **Packaging**: Jar  
+- **Java version**: 11 or higher  
 
 ### 📚 Dependencies
 
@@ -38,31 +38,33 @@ To start, go to 👉 [https://start.spring.io](https://start.spring.io) and gene
 
 We will work with an entity called `Fruit`, which contains the following fields:
 
-- int id;
-- String name;
-- int quantityKilos;
+- `int id`  
+- `String name`  
+- `int quantityKilos`  
 
+---
 
-##Package Structure
+## 📂 Package Structure
 
+- `cat.itacademy.s04.t02.n01.controllers`  
+- `cat.itacademy.s04.t02.n01.model`  
+- `cat.itacademy.s04.t02.n01.services`  
+- `cat.itacademy.s04.t02.n01.repository`  
+- `cat.itacademy.s04.t02.n01.exception`  
 
-cat.itacademy.s04.t02.n01.controllers
-cat.itacademy.s04.t02.n01.model
-cat.itacademy.s04.t02.n01.services
-cat.itacademy.s04.t02.n01.repository
-cat.itacademy.s04.t02.n01.exception
+---
 
-##⚠️ Best Practices
-Use ResponseEntity to handle all HTTP responses.
+## ⚠️ Best Practices
 
-Follow REST API standards for naming and HTTP status codes.
+- Use `ResponseEntity` to handle all HTTP responses.  
+- Follow REST API standards for naming and HTTP status codes.  
+- Implement centralized error handling using a `GlobalExceptionHandler`.
 
-Implement centralized error handling using a GlobalExceptionHandler.
+### GlobalExceptionHandler
 
-GlobalExceptionHandler
 Implement a global exception handler to ensure that:
 
-All errors are caught and returned in a consistent format.
+- All errors are caught and returned in a consistent format.  
+- The application remains robust and easier to debug.
 
-The application remains robust and easier to deb
-
+---
